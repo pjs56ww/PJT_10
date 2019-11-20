@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block title %}Accounts::User Index{% endblock title %}
+
+{% block container %}
+
+<h2>유저 목록</h2>
+
+<ul>
+  {% for user in users %}
+    <li>
+    {{ user.username }}
+    </li>
+  {% endfor %}
+
+</ul>
+
+{% endblock container %}
